@@ -29,7 +29,8 @@
               "src/assets/betweentheratsandsnakes_presskit.zip"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app/styles/fonts.scss"
             ],
             "scripts": []
           },

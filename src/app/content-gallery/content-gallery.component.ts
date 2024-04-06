@@ -8,34 +8,34 @@ import { Component, OnInit } from "@angular/core";
 export class ContentGalleryComponent implements OnInit {
   public images = [
     {
-      title: "Nobel",
-      subtitle: "Photo by",
-      url: "../../assets/musicon_2.jpg",
+      title: "Musicon",
+      subtitle: "Photo by sethpicturesmusic",
+      url: "assets/musicon_2.jpg",
     },
     {
       title: "Musicon",
-      subtitle: "Photo by",
-      url: "../../assets/musicon_3.jpg",
+      subtitle: "Photo by sethpicturesmusic",
+      url: "assets/musicon_3.jpg",
     },
     {
-      title: "Test",
-      subtitle: "",
-      url: "../../assets/musicon_3.jpg",
+      title: "Musicon",
+      subtitle: "Photo by sethpicturesmusic",
+      url: "assets/musicon_1.jpg",
     },
     {
-      title: "Test",
-      subtitle: "",
-      url: "https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg",
+      title: "Nobel",
+      subtitle: "Photo by Coen Bastiaanssen",
+      url: "assets/nobel_1.jpg",
     },
     {
-      title: "Test",
-      subtitle: "",
-      url: "https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg",
+      title: "Nobel",
+      subtitle: "Photo by Coen Bastiaanssen",
+      url: "assets/nobel_2.jpg",
     },
     {
-      title: "Test",
-      subtitle: "",
-      url: "https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg",
+      title: "Nobel",
+      subtitle: "Photo by Coen Bastiaanssen",
+      url: "assets/nobel_4.jpeg",
     },
   ];
 

@@ -1,40 +1,20 @@
-<div class="container max-w-screen-lg mx-auto pb-10">
-  <section class="">
-    <style>
-      .zoom:hover img {
-        transform: scale(1.1);
-      }
-    </style>
-
-    <h2 class="mb-12 text-center text-3xl font-bold">
-      Projects we are<u class="text-primary dark:text-primary-400"> proud of</u>
-    </h2>
-
-    <div class="grid gap-6 lg:grid-cols-3">
-      <div
-       *ngFor="let image of images"
-        class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
-        data-te-ripple-init
-        data-te-ripple-color="dark">
+<div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12 mb-6">
+  <div class="-m-1 flex flex-wrap md:-m-2">
+    <div *ngFor="let image of images" class="flex w-1/3 flex-wrap">
+      <div class="max-h-96 w-full p-1 md:p-2 block relative">
         <img
-          src="{{image.url}}"
-          class="w-full align-middle transition duration-300 ease-linear" />
-        <a href="#!">
-          <div
-            class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
-            <div class="flex h-full items-end justify-start">
-              <h5 class="m-2 text-sm font-bold text-white">
-                {{image.title}}
-                <p class="text-xs font-light">{{image.subtitle}}</p>
-              </h5>
+          alt="gallery"
+          class="block overflow-hidden h-full w-full rounded-lg object-cover object-center transition duration-300 ease-linear"
+          src="{{image.url}}" />
+          <div class="hidden lg:block text-white absolute left-0 right-0 bottom-0 p-4">
+            <div class="text-lg">
+              <span>{{image.title}}</span>
+            </div>
+            <div class="text-sm">
+              <span>{{image.subtitle}}</span>
             </div>
           </div>
-          <div>
-            <div
-              class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]"></div>
-          </div>
-        </a>
       </div>
     </div>
-  </section>
+  </div>
 </div>
