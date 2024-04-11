@@ -1,4 +1,5 @@
 <div class="container mx-auto md:px-6">
+  <div id="contact"></div>
   <section class="mb-32">
     <div
       class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-contact"></div>
@@ -8,6 +9,10 @@
         <div class="flex flex-wrap">
           <div
             class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+            <div class="md:hidden mb-10">
+              <h2 class="text-white text-4xl mb-10">Socials</h2>
+              <app-social-links></app-social-links>
+            </div>
             <h2 class="text-white text-4xl mb-10">Press Kit</h2>
             <button
               (click)="downloadPressKit()"
@@ -121,4 +126,3 @@
     </div>
   </section>
 </div>
-<div id="contact"></div>

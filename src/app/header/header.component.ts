@@ -11,11 +11,6 @@ export class HeaderComponent implements OnInit {
     { id: "home", name: "Home", route: "#home" },
     { id: "music", name: "Music", route: "#music" },
     { id: "live", name: "Live", route: "#live" },
-    {
-      id: "merch",
-      name: "Merch",
-      route: "https://shop.betweentheratsandsnakes.com/",
-    },
     { id: "contact", name: "Contact", route: "#contact" },
   ];
   public isOpen: boolean = false;
@@ -23,6 +18,10 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  public onMenuLinkClick(): void {
+    this.onMenuToggle();
+  }
 
   public onMenuToggle(): void {
     this.isOpen = !this.isOpen;

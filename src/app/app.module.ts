@@ -9,7 +9,7 @@ import { ContentLiveComponent } from './content-live/content-live.component';
 import { ContentContactComponent } from './content-contact/content-contact.component';
 import { ContentGalleryComponent } from './content-gallery/content-gallery.component';
 import { SharedModule } from './shared/shared.module';
-import { SocialLinksComponent } from './header/social-links/social-links.component';
+import { SocialLinksComponent } from './social-links/social-links.component';
 
 @NgModule({
   declarations: [

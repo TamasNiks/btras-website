@@ -4,11 +4,11 @@
         <div class="flex h-16 items-center justify-between">
           <div class="flex items-center">
             <div class="flex-shrink-0">
-              <img class="h-8 w-18" src="../../assets/logo_ensou_black_bg.png" alt="Your Company">
+              <img class="h-8 w-18" src="../../assets/logo_ensou_small.png" alt="Your Company">
             </div>
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4" >
-                <a *ngFor="let item of menuItems" href="{{item.route}}" class="text-gray-300 hover:bg-purple-800 hover:text-white rounded-md px-3 py-2 text-xl font-medium {{item.id}}" >{{item.name}}</a>
+                <a *ngFor="let item of menuItems" (click)="onMenuLinkClick()" href="{{item.route}}" class="text-gray-300 hover:bg-purple-800 hover:text-white rounded-md px-3 py-2 text-xl font-medium {{item.id}}" >{{item.name}}</a>
               </div>
             </div>
           </div>
@@ -34,10 +34,7 @@
   
       <div class="md:hidden {{isOpen ? 'block' : 'hidden'}}" id="mobile-menu">
         <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-          <a *ngFor="let item of menuItems" href="{{item.route}}" class="text-gray-300 hover:bg-purple-800 hover:text-white block rounded-md px-3 py-2 text-2xl font-medium {{item.id}}">{{item.name}}</a>
-        </div>
-        <div>
-          <app-social-links></app-social-links>
+          <a *ngFor="let item of menuItems" (click)="onMenuLinkClick()" href="{{item.route}}" class="text-gray-300 hover:bg-purple-800 hover:text-white block rounded-md px-3 py-2 text-2xl font-medium {{item.id}}">{{item.name}}</a>
         </div>
       </div>
     </nav>
