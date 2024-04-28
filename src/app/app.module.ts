@@ -10,6 +10,7 @@ import { ContentContactComponent } from './content-contact/content-contact.compo
 import { ContentGalleryComponent } from './content-gallery/content-gallery.component';
 import { SharedModule } from './shared/shared.module';
 import { SocialLinksComponent } from './social-links/social-links.component';
+import { ContentSpotifyComponent } from './content-spotify/content-spotify.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SocialLinksComponent } from './social-links/social-links.component';
     ContentLiveComponent,
     ContentContactComponent,
     ContentGalleryComponent,
-    SocialLinksComponent
+    SocialLinksComponent,
+    ContentSpotifyComponent
   ],
   imports: [
     BrowserModule,
