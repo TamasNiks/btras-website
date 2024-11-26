@@ -13,8 +13,8 @@ export class ContentContactComponent implements OnInit {
   public downloadPressKit(): void {
     let link = document.createElement("a");
     link.setAttribute("type", "hidden");
-    link.href = "assets/betweentheratsandsnakes_presskit.zip";
-    link.download = "betweentheratsandsnakes_presskit.zip";
+    link.href = "assets/betweentheratsandsnakes_presskit_2024.zip";
+    link.download = "betweentheratsandsnakes_presskit_2024.zip";
     document.body.appendChild(link);
     link.click();
     link.remove();

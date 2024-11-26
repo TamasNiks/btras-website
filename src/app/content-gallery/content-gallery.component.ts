@@ -10,42 +10,51 @@ export class ContentGalleryComponent implements OnInit {
   @ViewChild("modal") modal: any;
   @ViewChild("modalImg") modalImg: any;
 
+  public imageHeader = [
+    {
+      id: "imgAll",
+      title: "Musicon",
+      subtitle: "Photo by Megan Keijzer",
+      url: "assets/M_ALL_1.JPG",
+    },
+  ]
+
   public images = [
     {
       id: "img1",
-      title: "Musicon",
+      title: "Sounddog",
       subtitle: "Photo by sethpicturesmusic",
-      url: "assets/musicon_2.jpg",
+      url: "assets/SD_J_1.JPG",
     },
     {
       id: "img2",
-      title: "Musicon",
+      title: "Sounddog",
       subtitle: "Photo by sethpicturesmusic",
-      url: "assets/musicon_3.jpg",
+      url: "assets/SD_P_1.JPG",
     },
     {
       id: "img3",
-      title: "Musicon",
+      title: "Sounddog",
       subtitle: "Photo by sethpicturesmusic",
-      url: "assets/musicon_1.jpg",
+      url: "assets/SD_T_1.JPG",
     },
     {
       id: "img4",
-      title: "Nobel",
-      subtitle: "Photo by Coen Bastiaanssen",
-      url: "assets/nobel_1.jpg",
+      title: "Musicon",
+      subtitle: "Photo by Megan Keijzer",
+      url: "assets/M_J_1.JPG",
     },
     {
       id: "img5",
-      title: "Nobel",
-      subtitle: "Photo by Coen Bastiaanssen",
-      url: "assets/nobel_2.jpg",
+      title: "Musicon",
+      subtitle: "Photo by Megan Keijzer",
+      url: "assets/M_T_1.JPG",
     },
     {
       id: "img6",
-      title: "Nobel",
-      subtitle: "Photo by Coen Bastiaanssen",
-      url: "assets/nobel_4.jpeg",
+      title: "Musicon",
+      subtitle: "Photo by Megan Keijzer",
+      url: "assets/M_P_1.JPG",
     },
   ];
   public isHidden: boolean = true;
